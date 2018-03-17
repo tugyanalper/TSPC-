@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		659B8B5220436E23008A9DA9 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 659B8B5120436E23008A9DA9 /* main.cpp */; };
+		655E9834205551DC00EBCF04 /* Python.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6528AB3C204ADDC100699864 /* Python.framework */; };
+		658277042044754400DA04B6 /* TSP.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 658277022044754400DA04B6 /* TSP.cpp */; };
+		65827706204475EB00DA04B6 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65827705204475EB00DA04B6 /* main.cpp */; };
+		65D3CE46204C5AA1000D7CF5 /* ProblemReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65D3CE44204C5AA1000D7CF5 /* ProblemReader.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +26,23 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6516036F2051CBA500E25E2E /* a280.tsp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = a280.tsp; sourceTree = "<group>"; };
+		651603702051D4A000E25E2E /* bays29.tsp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bays29.tsp; sourceTree = "<group>"; };
+		652425EA2054175C00874294 /* eil51.tsp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = eil51.tsp; sourceTree = "<group>"; };
+		652425EB2054175C00874294 /* eil76.tsp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = eil76.tsp; sourceTree = "<group>"; };
+		652425EC2054175C00874294 /* eil101.tsp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = eil101.tsp; sourceTree = "<group>"; };
+		652425ED2054175C00874294 /* fl417.tsp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fl417.tsp; sourceTree = "<group>"; };
+		652425EE2054175C00874294 /* berlin52.tsp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = berlin52.tsp; sourceTree = "<group>"; };
+		6528AB3C204ADDC100699864 /* Python.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Python.framework; path = System/Library/Frameworks/Python.framework; sourceTree = SDKROOT; };
+		655E9A5520555BA500EBCF04 /* results_a280.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = results_a280.txt; sourceTree = "<group>"; };
+		655E9A5820556DE900EBCF04 /* results.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = results.txt; sourceTree = "<group>"; };
+		658277022044754400DA04B6 /* TSP.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TSP.cpp; sourceTree = "<group>"; };
+		658277032044754400DA04B6 /* TSP.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = TSP.hpp; sourceTree = "<group>"; };
+		65827705204475EB00DA04B6 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		659B8B4E20436E23008A9DA9 /* TSP_Genetic_Source_Code */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TSP_Genetic_Source_Code; sourceTree = BUILT_PRODUCTS_DIR; };
-		659B8B5120436E23008A9DA9 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		65D3CE44204C5AA1000D7CF5 /* ProblemReader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ProblemReader.cpp; sourceTree = "<group>"; };
+		65D3CE45204C5AA1000D7CF5 /* ProblemReader.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ProblemReader.hpp; sourceTree = "<group>"; };
+		65FE55A4205AFC980039EBAA /* OptimalToursforAllProblems */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OptimalToursforAllProblems; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,15 +50,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				655E9834205551DC00EBCF04 /* Python.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		655E9A5720556C0800EBCF04 /* TSPFiles */ = {
+			isa = PBXGroup;
+			children = (
+				652425EA2054175C00874294 /* eil51.tsp */,
+				652425EB2054175C00874294 /* eil76.tsp */,
+				652425EC2054175C00874294 /* eil101.tsp */,
+				652425ED2054175C00874294 /* fl417.tsp */,
+				652425EE2054175C00874294 /* berlin52.tsp */,
+				651603702051D4A000E25E2E /* bays29.tsp */,
+				6516036F2051CBA500E25E2E /* a280.tsp */,
+			);
+			name = TSPFiles;
+			sourceTree = "<group>";
+		};
 		659B8B4520436E23008A9DA9 = {
 			isa = PBXGroup;
 			children = (
+				6528AB3C204ADDC100699864 /* Python.framework */,
 				659B8B5020436E23008A9DA9 /* TSP_Genetic_Source_Code */,
 				659B8B4F20436E23008A9DA9 /* Products */,
 			);
@@ -57,7 +91,15 @@
 		659B8B5020436E23008A9DA9 /* TSP_Genetic_Source_Code */ = {
 			isa = PBXGroup;
 			children = (
-				659B8B5120436E23008A9DA9 /* main.cpp */,
+				65FE55A4205AFC980039EBAA /* OptimalToursforAllProblems */,
+				655E9A5820556DE900EBCF04 /* results.txt */,
+				655E9A5520555BA500EBCF04 /* results_a280.txt */,
+				655E9A5720556C0800EBCF04 /* TSPFiles */,
+				658277022044754400DA04B6 /* TSP.cpp */,
+				658277032044754400DA04B6 /* TSP.hpp */,
+				65827705204475EB00DA04B6 /* main.cpp */,
+				65D3CE44204C5AA1000D7CF5 /* ProblemReader.cpp */,
+				65D3CE45204C5AA1000D7CF5 /* ProblemReader.hpp */,
 			);
 			path = TSP_Genetic_Source_Code;
 			sourceTree = "<group>";
@@ -118,7 +160,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				659B8B5220436E23008A9DA9 /* main.cpp in Sources */,
+				65827706204475EB00DA04B6 /* main.cpp in Sources */,
+				65D3CE46204C5AA1000D7CF5 /* ProblemReader.cpp in Sources */,
+				658277042044754400DA04B6 /* TSP.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,6 +251,16 @@
 		659B8B5620436E23008A9DA9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"HEADER_SEARCH_PATHS[arch=*]" = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/boost/1.66.0/lib,
+				);
+				"LIBRARY_SEARCH_PATHS[arch=*]" = /usr/local/lib;
+				"OTHER_LDFLAGS[arch=*]" = (
+					"-lboost_system",
+					"-lboost_filesystem",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -214,6 +268,16 @@
 		659B8B5720436E23008A9DA9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"HEADER_SEARCH_PATHS[arch=*]" = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/boost/1.66.0/lib,
+				);
+				"LIBRARY_SEARCH_PATHS[arch=*]" = /usr/local/lib;
+				"OTHER_LDFLAGS[arch=*]" = (
+					"-lboost_system",
+					"-lboost_filesystem",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -237,6 +301,7 @@
 				659B8B5720436E23008A9DA9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
